@@ -8,6 +8,7 @@ class Nav extends React.Component {
                     src="/img/job-board-logo.png"
                     alt="Logo of JobBoard company"
                     className="logo"
+                    style={{ height: "50px", width: "50px" }}
                 />
                 <ul>
                     <li>Post a job</li>
