@@ -1,139 +1,149 @@
 /* Global styles */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-	font-size: 62.5%;
-	scroll-behavior: smooth;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
-	font-family: 'Fira Sans', sans-serif;
-	background: #f5f5f5;
+    font-family: "Fira Sans", sans-serif;
+    background: #f5f5f5;
 }
 
 ul {
-	list-style: none;
+    list-style: none;
 }
 
 nav {
-	min-height: 10vh;
-	width: 100vw;
-	background: white;
+    display: flex;
+    min-height: 10vh;
+    width: 100vw;
+    background: white;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    margin-left: 2%;
 }
 
 nav ul {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: 90%;
-	overflow: hidden;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    overflow: hidden;
+    margin-right: 5%;
 }
 
 nav ul li {
-	padding: 1rem 3rem;
-	background: white;
-	color: black;
-	border-radius: 1rem;
-	border: 0.1rem solid gray;
-	margin-left: 1rem;
+    padding: 1rem 3rem;
+    background: white;
+    color: black;
+    border-radius: 1rem;
+    border: 0.1rem solid gray;
+    margin-left: 1rem;
 }
 
 .main-navigation {
-	min-width: 15vh;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	flex-direction: column;
-	background: #f5f5f5;
-	overflow: hidden;
+    min-width: 15vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background: #f5f5f5;
+    overflow: hidden;
 }
 
 .cities {
-	width: 100vw;
+    width: 100vw;
 }
 
 .cities ul {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	flex-direction: row;
-	margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 1rem;
 }
 
 .cities ul li {
-	padding: 1rem 3rem;
-	background: white;
-	color: black;
-	border-radius: 1rem;
-	border: 0.1rem solid gray;
-	margin-right: 2rem;
+    padding: 1rem 3rem;
+    background: white;
+    color: black;
+    border-radius: 1rem;
+    border: 0.1rem solid gray;
+    margin-right: 2rem;
 }
 
 .programing-languages {
-	width: 100vw;
+    width: 100vw;
 }
 
 .programing-languages ul {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	flex-direction: row;
-	margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 1rem;
 }
 
 .programing-languages ul li {
-	padding: 1rem 3rem;
-	background: white;
-	color: black;
-	border-radius: 1rem;
-	border: 0.1rem solid gray;
-	margin-right: 2rem;
-	margin-bottom: 1rem;
+    padding: 1rem 3rem;
+    background: white;
+    color: black;
+    border-radius: 1rem;
+    border: 0.1rem solid gray;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
 }
 
 .main-content {
-	min-height: 75vh;
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	flex-direction: row;
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
 }
 
 .job-offers {
-	flex: 1;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	flex-direction: column;
-	background: #f5f5f5;
-	max-height: 75vh;
-	overflow: auto;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background: #f5f5f5;
+    max-height: 75vh;
+    overflow: auto;
 }
 
 .job-offer {
-	min-width: 95%;
-	margin-top: 2rem;
-	min-height: 10vh;
-	background: white;
-	border-left: 0.5rem solid limegreen;
-	border-radius: 0.8rem;
-	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+    min-width: 95%;
+    margin-top: 2rem;
+    min-height: 10vh;
+    background: white;
+    border-left: 0.5rem solid limegreen;
+    border-radius: 0.8rem;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 .map {
-	flex: 1;
-	min-width: auto;
-	min-height: 75vh;
-	overflow: hidden;
+    flex: 1;
+    min-width: auto;
+    min-height: 75vh;
+    overflow: hidden;
 }
 
 .map img {
-	height: 100%;
-	width: 100%;
+    height: 100%;
+    width: 100%;
 }
