@@ -3,19 +3,13 @@ import JobOffer from "./JobOffer";
 
 class JobOffers extends React.Component {
     render() {
+        const { jobs } = this.props;
+
         return (
             <div className="job-offers">
-                <JobOffer />
-                <JobOffer />
-                <JobOffer />
-                <JobOffer />
-                <JobOffer />
-                <JobOffer />
-                <JobOffer />
-                <JobOffer />
-                <JobOffer />
-                <JobOffer />
-                <JobOffer />
+                {Object.keys(jobs).map(key => (
+                    <JobOffer key={key} index={key} jobs={jobs[key]} />
+                ))}
             </div>
         );
     }
