@@ -7,14 +7,16 @@ import jobs from "./database";
 
 class App extends React.Component {
     state = {
-        jobs: jobs
+        jobs: jobs,
+        city: ["Warszawa", "Wrocław", "Kraków", "Katowice", "Trójmiasto"],
+        filteredCity: []
     };
 
     render() {
         return (
             <React.Fragment>
                 <Nav />
-                <MainNavigation />
+                <MainNavigation cities={this.state.city} />
                 <div className="main-content">
                     <JobOffers jobs={this.state.jobs} />
                     <Map />

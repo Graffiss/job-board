@@ -1,6 +1,15 @@
 import React from "react";
 
 class MainNavigation extends React.Component {
+    onClickFilter = () => {
+        this.setState({});
+    };
+
+    /* 
+    if (this.props.city === this.props.jobs.city )
+
+    */
+
     render() {
         return (
             <div className="main-navigation">
@@ -8,7 +17,7 @@ class MainNavigation extends React.Component {
                     <ul>
                         <li>Warszawa</li>
                         <li>Kraków</li>
-                        <li>Wrocław</li>
+                        <li onClick={this.onClickFilter}>Wrocław</li>
                         <li>Poznań</li>
                         <li>Trójmiasto</li>
                         <li>Katowice</li>
